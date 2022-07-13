@@ -26,7 +26,7 @@ def browser(request):
     elif user_language == 'fr':
         options.add_experimental_option('prefs', {'intl.accept_languages': user_language})
         browser = webdriver.Chrome(options=options)
-    elif user_language == 'es':
+    elif user_language == 'en':
         options.add_experimental_option('prefs', {'intl.accept_languages': user_language})
         browser = webdriver.Chrome(options=options)
     else:
